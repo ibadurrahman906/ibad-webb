@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Kerja</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1bcf7b;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #155bf3;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #a6f118;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #f50e0e;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], input[type="file"], select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 14px;
+            box-sizing: border-box;
+            height: 150px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Pendaftaran Kerja</h2>
+
+        <form id="registrationForm">
+            <label for="fullName">Nama Lengkap:</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Masukkan nama lengkap Anda">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan alamat email Anda">
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Masukkan nomor telepon Anda">
+
+            <label for="position">Posisi yang Dilamar:</label>
+            <select id="position" name="position" required>
+                <option value="">Pilih posisi</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="QA Engineer">QA Engineer</option>
+            </select>
+
+            <label for="cv">Upload CV:</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+            <label for="message">Pesan atau Motivasi:</label>
+            <textarea id="message" name="message" placeholder="Tuliskan pesan atau motivasi Anda untuk melamar pekerjaan ini"></textarea>
+
+            <button type="submit">Kirim Pendaftaran</button>
+        </form>
+
+        <div class="footer">
+            <p>© 2025 Perusahaan PT Telkomsel - Semua Hak Cipta</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            alert("Formulir pendaftaran telah berhasil dikirim. Terima kasih atas lamaran Anda!");
+            document.getElementById("registrationForm").reset();
+        });
+    </script>
+<body>
+    <div class="container">
+        <h3>Hubungi saya</h3>
+    </div>
+</body>
+</body>
+</html>
